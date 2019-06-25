@@ -100,7 +100,7 @@ if($valid->isValid()){
      ?>
       <span id="confirmMessage" class="confirmMessage"></span>
       <?php echo $form->submit(array('btn', 'btn-lg', 'btn-primary','btn-block'),'submit');?>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+      <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
     </form>
   </body>
 </html>
