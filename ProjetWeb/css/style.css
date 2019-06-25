@@ -7,28 +7,6 @@ body, html{
   line-height:1.8em;
   columns: #999;
 }
-nav ul {
-    display: inline-flex; /* Ce conteneur est "flexible" */
-    flex-direction: row; /* Les éléments sont mis côte à côte */
-    justify-content: space-between; /* Les éléments sont répartis équitablement */
-    background-color: gray; /* Couleur du fond */
-    width: 100%; /* Le pied de page occupe toute la largeur */ 
-    position:fixed;
-    
-}
-nav ul li {
-    display: flex; /* Ce conteneur est "flexible" */
-    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
-    list-style-type: none; /* Cette liste n'a pas de puce */
-    font-size: x-large; /* Le texte est grossi en XXL */
-    flex-grow: 1;/* L'espace occupé est élargie */
-    
-}
-
-nav ul li:hover {
-    background-color:#9a330a; /* Couleur du fond au passage de la souris */
-}
-
 
 .pimg1, .pimg2, .pimg3{
   position:relative;
@@ -61,7 +39,7 @@ nav ul li:hover {
 
 .section{
   text-align:center;
-  padding:50px 80px;
+  padding:90px 10px;
 }
 
 .container .section-light{
@@ -105,4 +83,20 @@ nav ul li:hover {
   .pimg1, .pimg2, .pimg3{
     background-attachment:scroll;
   }
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.prix {
+    margin : 10px;
+}
+ #panier{
+     margnin-right: 70%;
 }

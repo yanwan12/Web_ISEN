@@ -14,106 +14,95 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
 
     </head>
-    <header id="menu">
-        <nav>
-            <ul>
-                <li><a href="connex.php">Connexion</a></li>
-                <li><a href="pages/panier.html"><img src="../images/noun_cart_2646583.png" width="20" alt=""></a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="pimg1" id="haut">
-        <section class="ptext">
-            <a href="#sect1" class="js-scrollTo">
-                <span class="border">
-                    EcomYaya
-                </span>
-            </a>
+    <body>
+        <header id="menu">
+            <div class="navbar">
+                <a href="#tshirt" class="js-scroll">T-Shirts</a>
+                <a href="#news">Connexion</a>
+                <a href="#contact" id="panier">Panier</a>
+            </div>
+        </header>
+        <div class="pimg1" id="haut">
+            <section class="ptext">
+                <a href="#tshirt" class="js-scroll">
+                    <span class="border">T-Shirts
+                    </span>
+                </a>
+            </section>
+        </div>
+        <section class="section section-light page page-header" id="tshirt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="img/bluetshirtfront.jpg" width="200" alt=""/>
+                        <p class="prix">30.99€ 
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-shopping-cart"></span>
+                            </button>
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Tshirt2</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>Tshirt1</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Tshirt2</p>
+                    </div>
+                </div>
+            </div>
         </section>
-    </div>
-
-    <section class="section section-light page page-header" id="sect1">
-        <h2>T-Shirts</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="img/bluetshirtfront.jpg" width="200" alt=""/>
-                    <p class="prix">30.99€ 
-                        <button type="button" class="btn btn-default btn-sm">
-                            <span class="glyphicon glyphicon-shopping-cart"></span>
-                        </button>
-                    </p>
-
-
-                </div>
-                <div class="col-lg-6">
-                    <p>Tshirt2</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <p>Tshirt1</p>
-                </div>
-                <div class="col-lg-6">
-                    <p>Tshirt2</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="pimg2">
-        <div class="ptext">
-            <span class="border trans">
-                Image Two Text
-            </span>
-        </div>
-    </div>
-
-    <section class="section section-dark">
-        <h2>Section Two</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-        </p>
-    </section>
-
-    <div class="pimg3">
-        <div class="ptext">
-            <span class="border trans">
-                Image Three Text
-            </span>
-        </div>
-    </div>
-
-    <section class="section section-dark">
-        <h2>Section Three</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-        </p>
-    </section>
-
-    <a href="https://github.com/yanwan12/ProjetWeb">
-        <div class="pimg1">
-            <span class="ptext">
-                <span class="border">
-                    Benhalima Media&copy;
+        <div class="pimg2">
+            <div class="ptext">
+                <span class="border trans">
+                    Image Two Text
                 </span>
-            </span>
+            </div>
         </div>
-    </a>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.js-scrollTo').on('click', function () { // Au clic sur un élément
-                var page = $(this).attr('href'); // Page cible
-                var speed = 800; // Durée de l'animation (en ms)
-                $('html, body').animate({
-                    scrollTop: $(page).offset().top
-                }, speed); // Go
-                return false;
+        <section class="section section-dark">
+            <h2>Section Two</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+            </p>
+        </section>
+        <div class="pimg3">
+            <div class="ptext">
+                <span class="border trans">
+                    Image Three Text
+                </span>
+            </div>
+        </div>
+        <section class="section section-dark">
+            <h2>Section Three</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+            </p>
+        </section>
+        <a href="https://github.com/yanwan12/Web_ISEN">
+            <div class="pimg1">
+                <span class="ptext">
+                    <span class="border">
+                        Benhalima Media&copy;
+                    </span>
+                </span>
+            </div>
+        </a>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.js-scroll').on('click', function () { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 800; // Durée de l'animation (en ms)
+                    $('html, body').animate({
+                        scrollTop: $(page).offset().top
+                    }, speed); // Go
+                    return false;
+                });
             });
-        });
-    </script>
-</body>
-
+        </script>
+    </body>
 </html>
