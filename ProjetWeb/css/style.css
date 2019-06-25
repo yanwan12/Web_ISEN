@@ -7,6 +7,28 @@ body, html{
   line-height:1.8em;
   columns: #999;
 }
+nav ul {
+    display: inline-flex; /* Ce conteneur est "flexible" */
+    flex-direction: row; /* Les éléments sont mis côte à côte */
+    justify-content: space-between; /* Les éléments sont répartis équitablement */
+    background-color: gray; /* Couleur du fond */
+    width: 100%; /* Le pied de page occupe toute la largeur */ 
+    position:fixed;
+    
+}
+nav ul li {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    list-style-type: none; /* Cette liste n'a pas de puce */
+    font-size: x-large; /* Le texte est grossi en XXL */
+    flex-grow: 1;/* L'espace occupé est élargie */
+    
+}
+
+nav ul li:hover {
+    background-color:#9a330a; /* Couleur du fond au passage de la souris */
+}
+
 
 .pimg1, .pimg2, .pimg3{
   position:relative;
